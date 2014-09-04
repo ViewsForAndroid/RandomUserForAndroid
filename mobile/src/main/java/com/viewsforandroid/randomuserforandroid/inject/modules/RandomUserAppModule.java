@@ -14,4 +14,11 @@ import dagger.Module;
         complete = true
 )
 public class RandomUserAppModule {
+
+    private RandomUserApplication app;
+
+    public RandomUserAppModule(RandomUserApplication app) {
+        this.app = app;
+    }
+
 }
